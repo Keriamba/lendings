@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700;900&family=Inter:wght@600&display=swap');
+
+
+.slider_container {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    max-width: 610.802px;
+    max-height: 675.963px;
+    flex-shrink: 0;
+    background-color: #93A3B4;
+
+    p {
+        text-align: center;
+        padding-top: 45px;
+        font-family: 'Exo 2';
+        font-size: 19.757px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 150%; /* 29.635px */
+        letter-spacing: -0.395px;
+        color: #fff;
+    }
+
+    .slider_image {
+        max-height: 418px;
+        max-width: 444px;
+    }
+    img {
+        margin: auto;
+    }
+
+    .slider_button_block {
+        margin: auto;
+    }
+}

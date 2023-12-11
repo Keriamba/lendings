@@ -1,0 +1,59 @@
+
+
+.container {
+    max-width: 1512px;
+}
+
+.header_container {
+    display: flex;
+    max-width: 1440px;
+    max-height: 84px;
+    padding: 14px 120px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    padding: 38px 36px;
+}
+
+.header_nav {
+display: flex;
+align-items: flex-start;
+font-family: 'Inter', sans-serif;
+font-weight: 600;
+font-size: 16px;
+
+    a{
+        padding: 16px;
+        cursor: pointer;
+        color: black;
+        transition: all 500ms ease;
+    }
+    a:hover {
+        font-size: 18px;
+        color: rgb(96, 93, 93);
+    }
+}
+
+.header_buttons_block {
+    display: flex;
+    align-items: flex-start;
+    gap: 21px;
+
+    .header_button_signin {
+        padding: 16px 24px;
+        border-radius: 8px;
+        border: 1px solid #3450E6;
+        background: #FFF;
+        color: #3450E6;
+    }
+
+    .header_button_signup {
+        padding: 16px 24px;
+        border-radius: 8px;
+        background: #3450E6;
+        color: white;
+    }
+
+}
