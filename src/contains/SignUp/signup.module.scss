@@ -1,73 +1,133 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700;900&family=Inter:wght@600&display=swap');
+@import '../../basic-styles/basic-styles';
+@import '../../basic-styles/buttons';
+@import '../../basic-styles/vars';
 
-.signup_container {
+.signupContainer {
     max-width: 1440px;
-}
-
-.content_container {
-    display: flex;
-    justify-content: start;
-    flex-direction: row;
-    gap: 112px;
-    max-height: 676px;
-    max-width: 1439px;
-}
-
-.form_content_container {
     display: flex;
     flex-direction: column;
-    max-width: 561.277px;
-    max-height: 608.226px;
-    flex-shrink: 0;
-    border: 1px solid black;
-
-    h2 {
-        font-family: 'Exo 2';
-        font-size: 19.757px;
-        font-style: normal;
-        font-weight: 900;
-        line-height: 140%; /* 27.659px */
-        letter-spacing: -0.395px;
-    }
-    p {
-        font-family: Exo 2;
-        font-size: 9.878px;
-        font-style: normal;
-        font-weight: 900;
-        line-height: 140%; /* 13.83px */
-        letter-spacing: -0.198px;
-    }
+    margin: 0 auto;
 }
 
-.logo_block {
-
-    span {
-        padding-left: 7.5px;
-        text-align: center;
-        font-family: 'Exo 2';
-        font-size: 12.701px;
-        font-style: normal;
-        font-weight: 900;
-        line-height: 120%;
-        letter-spacing: -0.254px;
-    }
+.contentContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 112px;
+    margin-bottom: 80px;
 }
 
+.formContentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    @extend %fontDesc;
+    font-size: 9.878px;
+    letter-spacing: -0.198px;
+    line-height: normal;
+}
 
-.form_fields {
+.logoBlock {
+    display: flex;
+    align-items: center;
+    gap: 7.5px;
+    color: $contentColor;
+    @extend %fontDesc;
+    font-size: 12.701px;
+    line-height: 15.241px;
+    letter-spacing: -0.254px;
+}
+
+.headFormTitle {
+    color: $contentColor;
+    @extend %fontDesc;
+    font-size: 19.757px;
+    line-height: 27.659px;
+    letter-spacing: -0.395px;
+}
+
+.headFormDescription {
+    color: $contentColor;
+    @extend %fontDesc;
+    font-size: 9.878px;
+    letter-spacing: -0.198px;
+    line-height: 13.83px;
+}
+
+.formFields {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    max-width: 545.249px;
-    max-height: 118.428px;
-    border: 1px solid black;
-
-
-    .field_input {
-        border: 1px solid lightgray;
-        border-radius: 4px;
-        margin: 0 40px 17px 0;
-    }
+    grid-template-columns: repeat(2, 1fr);
+    gap: 17.5px 40px;
+    margin-bottom: 47px;
 }
 
+.fieldItem {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
 
+.field_input {
+    border-radius: 3px;
+    border: 1px solid $midleLightColor;
+    height: 33px;
+    width: 252px;
+}
+
+.buttonBlock {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 24px;
+    text-align: center;
+}
+
+.checkBoxContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 11px;
+    margin-bottom: 22px;
+}
+
+.checkBoxWrapper {
+    display: flex;
+    text-align: center;
+    gap: 8px;
+}
+
+.customLink {
+    color: $colorSubmit;
+}
+
+.forgotPassword {
+    display: flex;
+    justify-content: end;
+}
+
+.SignUp {
+    @extend %fontDesc;
+    color: $colorBasic;
+    background-color: $colorSubmit;
+    height: 33.869px;
+}
+
+.SignUpWithGoogle {
+    color: $colorBasic;
+    @extend %fontDesc;
+    border-radius: 3.528px;
+    background-color: $darkColor;
+    height: 33.869px;
+}
+
+.haveAccount {
+    display: flex;
+    justify-content: center;
+    color: $contentColor;
+    gap: 2px;
+}
+
+.downloadAppButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
+}

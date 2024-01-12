@@ -6,12 +6,11 @@
     align-items: flex-start;
     justify-content: space-around;
     padding-bottom: 56px;
-    width: 1512px;
+    max-width: 1512px;
     height: 270px;
     flex-shrink: 0;
     border: 1px solid black;
     background-color: black;
-
 }
 
 .logo_desc_wrapper {
@@ -20,58 +19,61 @@
     flex-direction: column;
     max-width: 360px;
     padding-top: 59px;
-
-    p {
-        font-family: 'Exo 2';
-        font-size: 8.682px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 14.883px;
-        color: #DDD;
-        margin-bottom: 14px;
-    }
-
-    .logo {
-        padding: 8px 0;
-    }
-    a {
-        margin-right: 14px;
-    }
-
 }
 
 .pages_wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    h3 {
-        color: #FFF;
-        font-family: 'Exo 2';
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        margin: 19px 0;
-    }
+}
 
-    ul {
-        li {
-            margin-bottom: 14px;
+.footerDescription {
+    font-family: 'Exo 2';
+    font-size: 8.682px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14.883px;
+    color: #DDD;
+    margin-bottom: 14px;
+}
 
-            img {
-                margin-right: 8px;
-            }
-            a{
-                color: #FFF;
-                font-family: 'Exo 2';
-                font-size: 24px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 26px;
-                letter-spacing: -0.75px;
-            }
-        }
-    }
+.logo {
+    padding: 8px 0;
+}
+.socialNetorkLink {
+    margin-right: 14px;
+}
 
+.pagesTitle {
+    color: #FFF;
+    font-family: 'Exo 2';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 19px 0;
+}
 
+.footerLi {
+    margin-bottom: 14px;
+}
+
+.footerUl {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footerListLink{
+    color: #FFF;
+    font-family: 'Exo 2';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.75px;
+}
+
+.image {
+    margin-right: 8px;
 }

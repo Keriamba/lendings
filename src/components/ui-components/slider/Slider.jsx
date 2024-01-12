@@ -1,39 +1,33 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './slider.module.scss'
 
-const Slider = () => {
-    const defaultimageIndex = 1
-    const [images, setImages] = useState([{
-        imageUrl: '',
-        index: 0
-    },{
-        imageUrl: '../../../../images/ASTRA-LOGO-BIG.svg',
-        index: 1
-    },{
-        imageUrl: '',
-        index: 2
-    }])
+const Slider = (props) => {
+
+    useEffect(() => {
+        const images = props.images.map((item, index) => ({imageUrl:item, index}))
+        console.log(images)
+        setImages(images)
+    }, [])
+
+    const [images, setImages] = useState([])
     const activeItem = '../../../../images/sldier-active-circle.svg'
     const unactiveItem = '../../../../images/slider-circle.svg'
-    const [itemIndex, setItemIndex] = useState(defaultimageIndex)
-    const [imgState, setImgState] = useState('../../../../images/ASTRA-LOGO-BIG.svg')
+    const [itemIndex, setItemIndex] = useState(props.defaultImage)
+
 
     const handleImgChange = (index) => {
-        const img = images.find(item => item.index === index)
         setItemIndex(index)
-        setImgState(img.imageUrl)
     } 
-
     
   return (
-    <div className={styles.slider_container}>
+    <div style={{backgroundColor: (props.backgroundColor ? props.backgroundColor : '#FFF')}} className={styles.SliderContainer}>
         <p>
-            Create an account
+            {props.sliderTitle}
         </p>
-        <img className={styles.slider_image} src={imgState} />
-        <div className={styles.slider_button_block}>
+        <img width={420} height={418} className={styles.sliderImage} src={images[itemIndex]?.imageUrl} />
+        <div className={styles.sliderButtonBlock}>
             {
-            Array(3).fill(null).map((item, index) => {
+            Array(props.images?.length).fill(null).map((item, index) => {
                 console.log(index)
                 return (
                 <button onClick={() => handleImgChange(index)} key={index}>

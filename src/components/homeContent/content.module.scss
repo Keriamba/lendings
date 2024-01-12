@@ -1,368 +1,340 @@
+@import '../../basic-styles/basic-styles';
+@import '../../basic-styles/vars';
+@import '../../basic-styles/buttons';
 
 
-.content_head_container {
+//preview block
+.previewContainer {
     display: flex;
+    align-items: center;
     max-width: 1440px;
     height: 900px;
-    align-items:center;
-    justify-content: space-between;
+    margin: 0 auto;
     border-radius: 80px;
-    margin: 0 36px;
-    padding: 0 64px;
-    background-image: linear-gradient(240deg, (#7f95d8), #f6eeec,#e1e4e1);
-
-    
+    background-image: url('../../../images/backgroundImage.jpg');
+    background-repeat: no-repeat;
 }
 
-.text_content_wrapper {
+.previewContentContainer {
     display: flex;
-    max-width: 560px;
-    flex-direction:column;
-    gap: 58px;
-    flex-shrink: 0;
-    h1 {
-        font-family: 'Exo 2';
-        font-size: 64px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 110%;
-        letter-spacing: -4px;
-    }
-
-    p {
-        font-family: 'Exo 2';
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 900;
-        line-height: 150%;
-    }
-    a {
-        color: black;
-        padding: 12px 24px;
-        font-family: 'Exo 2';
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 900;
-        line-height: 150%;
-    }
-
-    a:visited {
-        color: black
-    }
-
-    .button_block {
-        display: flex;
-        padding-top: 16px;
-        align-items: flex-start;
-        gap: 16px;
-    }
-}
-
-.content_explore_container {
-    display: flex;
-    max-width: 1440px;
-    padding: 112px 64px;
-    margin: 0 36px;
     flex-direction: column;
+    gap: 25px;
+    padding-left: 64px;
+}
+
+.previewTitle {
+    @extend %fontTitle;
+    font-size: 64px;
+    line-height: 70.4px;
+    letter-spacing: -4px;
+}
+
+.previewText {
+    @extend %fontDesc;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.articleWrapper {
+    display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    gap: 58px;
 }
 
-.content_explore_wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: start;
-    align-self: stretch;
-    gap: 80px;
-
-    .text_content_explore {
-        display: flex;
-        flex-direction: column;
-        font-family: 'Exo 2';
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 900;
-        line-height: 150%;
-        gap: 32px;
-
-        .explore {
-            font-family: 'Exo 2';
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 900;
-            line-height: 150%;
-        }
-
-        h1 {
-            padding-top: 16px;
-            font-family: 'Exo 2';
-            font-size: 48px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 120%;
-            padding-bottom: 24px;
-        }
-
-        ul {
-            padding-left: 24px;
-        }
-
-        li {
-        font-family: 'Exo 2';
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 900;
-        line-height: 150%;
-        list-style: disc;
-        }
-
-        .text_addition_container {
-            display: flex;
-            padding: 8px 0px;
-            flex-direction: row;
-            align-items: flex-start;
-            gap: 24px;
-            align-self: stretch;
-    
-            .text_addition_item {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 16px;
-                flex: 1 0 0;
-            }
-            p {
-                font-family: 'Exo 2';
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 900;
-                line-height: 150%;
-            }
-            h3 {
-                font-family: 'Exo 2';
-                font-size: 20px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 140%;
-            }
-        }
-
-        .content_explore_button_block {
-            display: flex;
-            padding-top: 16px;
-            align-items: center;
-            gap: 24px;
-
-            button {
-                padding: 12px 24px;
-                border: 1px solid black;
-                font-family: Exo 2;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 900;
-                line-height: 150%;
-            }
-            a:visited {
-                color: black
-            }
-        }
-
-    }
-
-    .img_content_explore {
-        height: 640px;
-        flex: 1 0 0;
-
-        img {
-            border-radius: 80px;
-            background: lightgray 50% / cover no-repeat;
-            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-        }
-    }
-
+.learnMorePreview {
+    color: $contentColor;
+    @extend %fontDesc;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 12px 24px;
+    border: 1px solid $colorBasic;
 }
 
-.proposition_container {
+//description block
+.descriptionContainer {
+    margin: 112px auto;
     display: flex;
-    max-width: 1440px;
-    padding: 112px 64px;
-    margin: 0 36px;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 80px;
-    border-radius: 80px;
-    background: #F7F2F8;
-    margin-bottom: 72px;
-
-
-    .proposition_item_block {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 24px;
-        flex: 1 0 0;
-
-        h3 {
-            font-family: 'Exo 2';
-            font-size: 32px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 130%; 
-        }
-
-        p {
-            font-family: 'Exo 2';
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 900;
-            line-height: 150%;
-        }
-
-        button {
-            padding: 12px 24px;
-            border: 1px solid black;
-            font-family: 'Exo 2';
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 900;
-            line-height: 150%;
-        }
-    }
-}
-
-.quality_block_container {
-    display: flex;
-    max-width: 1440px;
-    margin: 0 36px;
-    padding: 112px 64px;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 80px;
-
-    .quality_text_content_container {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 24px;
-        flex: 1 0 0;
-
-        .qualuity {
-            font-family: 'Exo 2';
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 900;
-            line-height: 150%;
-        }
-        h1 {
-            font-family: 'Exo 2';
-            font-size: 48px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 120%;
-        }
-
-        p {
-            font-family: 'Exo 2';
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 900;
-            line-height: 150%;
-        }
-
-        .proposition_list_wrapper {
-            display: flex;
-            padding: 8px 0px;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 16px;
-            align-self: stretch;
-            font-family: 'Exo 2';
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 900;
-            line-height: 150%;
-
-            ul {
-                margin-bottom: 24px;
-            }
-            li {
-                img {
-                    padding-right: 16px;
-                }
-                padding-bottom: 16px;
-            }
-
-        }
-
-        button {
-            padding: 12px 24px;
-            border: 1px solid black;
-            font-family: 'Exo 2';
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 900;
-            line-height: 150%;
-        }
-    }
-    img {
-        border-radius: 80px;
-    }
-    
-}
-
-.raiting_container {
-    display: flex;
-    max-width: 1440px;
-    padding: 112px 64px;
-    margin: 0 36px;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
+    gap: 80px;
+    max-width: 1440px;
+}
+
+.candiesImg {
+    border-radius: 80px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.descriptionTextContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.descriptionSpan {
+    @extend %fontDesc;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+    color: $contentColor;
+}
+
+.descriptionArticle {
+    @extend %fontDesc;
+    font-size: 18px;
+    line-height: 27px;
+    color: $contentColor;
+}
+
+.descriptionTitle {
+    @extend %fontTitle;
+    font-size: 48px;
+    line-height: 57.6px;
+    margin-bottom: 24px;
+}
+
+.descriptionUl {
+    padding-left: 20px;
+    margin-bottom: 32px;
+}
+
+.descriptionLi {
+    list-style-type: disc;
+}
+
+.descriptionText {
+    @extend %fontDesc;
+    font-size: 16px;
+    line-height: 24px;
+    color: $contentColor;
+    margin-bottom: 40px;
+}
+
+.descriptionProducttitle {
+    @extend %fontTitle;
+    color: $contentColor;
+    font-size: 20px;
+    line-height: 28px;
+    padding-bottom: 16px;
+}
+
+.productDescription {
+    display: flex;
+    flex-direction: row;
+    padding: 0 8px;
+    gap: 24px;
+}
+
+.buttonBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
+
+.shopButton {
+    @extend %classicButton;
+}
+
+.learnMoreDescription {
+    @extend %fontDesc;
+    color: $contentColor;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.propositionContainer {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 48px;
+    margin: 0 auto;
+    border-radius: 80px;
+    background-color: $highlightColor;
+    margin-bottom: 72px;
+}
+
+//proposition block
+.propositionBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 112px 0;
+}
+
+.propositionTitle {
+    color: $contentColor;
+    @extend %fontTitle;
+    font-size: 32px;
+    line-height: 41.6px;
+}
+
+.propositionText {
+    color: $contentColor;
+    @extend %fontDesc;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.propositionLink {
+    @extend %classicButton;
+}
+
+// quality block
+.qualityContainer {
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: row;
+    margin: 0 auto;
+    gap: 80px;
+    margin-bottom: 112px;
+}
+
+.qualityImage {
+    border-radius: 80px;
+}
+
+.qualityTextContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.qualityTextHead {
+    color: $contentColor;
+    @extend %fontDesc;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px
+}
+
+.qualityTitle {
+    color: $contentColor;
+    @extend %fontTitle;
+    font-size: 48px;
+    line-height: 57.6px;
+    margin-bottom: 24px;
+}
+
+.qualityText {
+    color: $contentColor;
+    @extend %fontDesc;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 32px;
+}
+
+.qualityUl {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 32px;
+    padding-left: 8px;
+}
+
+.qualityList {
+    color: $contentColor;
+    @extend %fontDesc;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.listQualityImage {
+    align-items: center;
+    padding-right: 8px;
+}
+
+.qualityLink {
+    @extend %classicButton;
+}
+
+.raitingContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-bottom: 50px;
     gap: 80px;
 }
 
-.raiting_text_container {
+.raitingTextContent {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 32px;
-    flex: 1 0 0;
-    
-    p {
-        font-family: 'Exo 2';
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 140%;
-    }
-
-    .label_container {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-
-        .name_block {
-            padding: 6.5px 0;
-            p{
-                font-family: 'Exo 2';
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 900;
-                line-height: 150%;
-            }
-        }
-
-        span {
-            position: relative;
-
-        }
-        span:before{
-            content: '';
-            position: absolute;
-            top: -30px;
-            width: 1px;
-            height: 61px;
-            background-color: black;
-        } 
-    }
 }
 
+.raitingBlock {
+    display: flex;
+    flex-direction: row;
+}
+
+.raitingDescription {
+    color: $contentColor;
+    @extend %fontDesc;
+    font-size: 24px;
+    line-height: 33.6px;
+}
+
+.itemText {
+    color: $contentColor;
+    @extend %fontDesc;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.itemBlock {
+    display: flex;
+    flex-direction: column;
+    padding: 6.5px 0;
+}
+
+.divider {
+    width: 1px;
+    height: 61px;
+    border: 1px solid $contentColor
+}
+
+.creatorBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+
+@media (max-width: 430px) {
+    .previewContainer {
+        background-position: bottom -1px right -294px;
+        color: $colorBasic;
+        border-radius: 0;
+    }
+
+    .previewContentContainer {
+        padding: 0;
+    }
+
+    .articleWrapper {
+        padding: 0 20px;
+    }
+
+    .previewText {
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .buttonBlock {
+        padding: 0 20px;
+    }
+    .learnMorePreview {
+        color: $colorBasic;
+    }
+
+    .descriptionContainer {
+        flex-direction: column;
+    }
+}
 

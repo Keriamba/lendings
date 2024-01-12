@@ -1,0 +1,104 @@
+@import '../../basic-styles/_basic-styles.scss';
+@import '../../basic-styles/buttons';
+@import '../../basic-styles/vars';
+
+.footerContainer {
+    display: flex;
+    max-width: 1440px;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 80px;
+}
+
+.footerDataContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+}
+
+.contactDataContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    gap: 32px;
+
+    p {
+        color: $contentColor;
+        font-family: $fontBasic;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    address,
+    a {
+        color: $contentColor;
+        @extend %fontDesc;
+        font-size: 14px;
+        line-height: 21px;
+        text-decoration: underline;
+    }
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.socialNetworks {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.infoWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    a {
+        color: $contentColor;
+        font-family: $fontBasic;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height:24px
+    }
+
+}
+
+.termsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.divider {
+    border: 1px solid $contentColor;
+}
+
+.termsDataContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    color: $contentColor;
+    @extend %fontDesc;
+    font-size: 14px;
+    line-height: 21px;
+
+     p {
+        flex-grow: 1;
+     }
+
+     a {
+        color: $darkColor;
+        text-decoration-line: underline;
+     }
+
+}

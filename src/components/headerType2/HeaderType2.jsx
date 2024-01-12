@@ -4,12 +4,13 @@ const HeaderType2 = () => {
 
   return (
     <header className={styles.header_container}>
-        <img src='../../../images/ASTRA-LOGO-TYPE2.svg' />
-
+        <a href='#'>
+          <img width={204} height={83} src='../../../images/ASTRA-LOGO-TYPE2.svg' alt='logo' />
+        </a>
         <div className={styles.button_wrapper}>
-            <a>Home</a>
-            <a>Shop</a>
-            <a>Subscribe</a>
+            <a href='#'>Home</a>
+            <a href='#'>Shop</a>
+            <a href='#'>Subscribe</a>
         </div>
     </header>
   )

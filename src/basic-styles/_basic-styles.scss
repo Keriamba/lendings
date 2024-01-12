@@ -1,0 +1,35 @@
+@import './vars';
+
+//fonts
+
+%fontTitle {
+    font-family: $fontBasic;
+    font-style: normal;
+    font-weight: 700;
+}
+
+%fontDesc {
+    font-family: $fontBasic;
+    font-style: normal;
+    font-weight: 900;
+}
+
+%fontOneHeader {
+    font-family: $fontInter;
+    font-style: normal;
+    color: #333;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+//global containers
+
+%globalContainer {
+    max-width: 1512px;
+    margin: 0 auto;
+}
+
+
+

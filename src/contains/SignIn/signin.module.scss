@@ -1,0 +1,227 @@
+@import '../../basic-styles/basic-styles';
+@import '../../basic-styles/basic-styles';
+@import '../../basic-styles/basic-styles';
+
+$gap: 24px;
+
+.signInContentContainer {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.signInHeadContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 112px 64px;
+
+    background-image: url('../../../images/head50.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: $colorBasic;
+}
+
+.explore {
+    @extend %fontDesc;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.signInHeadTitle {
+    @extend %fontTitle;
+    font-size: 56px;
+    line-height: 67.2px;
+    margin-bottom: $gap;
+}
+
+.signInHeadDescription {
+    @extend %fontDesc;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: $gap;
+}
+
+.headButtonBlock {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    padding-top: 16px;
+}
+
+.learnMore {
+    padding: 12px 24px;
+    color: $colorBasic;
+    background-color: $contentColor;
+    @extend %fontDesc;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.signUp {
+    padding: 12px 24px;
+    color: $colorBasic;
+    @extend %fontDesc;
+    font-size: 16px;
+    line-height: 24px;
+    border: 1px solid $colorBasic;
+}
+
+.ContentContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 80px;
+}
+
+.formContentContainer {
+    display: flex;
+    flex-direction: column;
+    @extend %fontDesc;
+    color: $contentColor;
+}
+
+.logoBlock {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    align-items: center;
+    margin-bottom: 52px;
+}
+
+.astra {
+    font-size: 12.701px;
+    letter-spacing: -0.254px;
+    line-height: 15.241px;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 60px;
+}
+
+.signInTextTitle {
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: -0.198px;
+    letter-spacing: -0.4px;
+}
+
+.signInText {
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: -0.2px;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.fieldsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    margin-bottom: 47px;
+}
+
+.fieldItem {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    border-radius: 3px;
+    border: 1px solid $midleLightColor;
+    height: 33px;
+    width: 252px;
+}
+
+.checkboxBlockContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+
+.checkBoxContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.checkBoxItem {
+    display: flex;
+    font-size: 9.878px;
+    line-height: 13.83px;
+    letter-spacing: -0.198px;
+    align-items: center;
+}
+
+.checkBoxInput {
+    margin-right: 8px;
+}
+
+.customLink {
+    color: $colorSubmit;
+}
+
+.forgotPasswordLink {
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    font-size: 9.878px;
+    line-height: 13.83px;
+    letter-spacing: -0.198px;
+    color: $colorSubmit;
+}
+
+.buttonBlock {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    font-size: 9.878px;
+    line-height: normal;
+    letter-spacing: -0.198px;
+    margin-bottom: 22px
+}
+
+.SignIn {
+    @extend %fontDesc;
+    color: $colorBasic;
+    border-radius: 3.528px;
+    background-color: $colorSubmit;
+    height: 33.869px;
+}
+
+.SignUpWithGoogle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: $colorBasic;
+    @extend %fontDesc;
+    border-radius: 3.528px;
+    background-color: $darkColor;
+    height: 33.869px;
+}
+
+.createAccountBlock {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 36px;
+}
+
+.downloadAppButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
+}
+
